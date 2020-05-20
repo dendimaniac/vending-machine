@@ -1,7 +1,12 @@
 export default class VendingMachine {
-    coins: number[]
+  coins: number[];
 
-    constructor(coinSet: object);
+  constructor(coinSet: object);
 
-    vending(price: number, insertSet: object): void;
+  vending(
+    price: number,
+    insertSet: object
+  ): {
+    [key: string]: number;
+  };
 }
